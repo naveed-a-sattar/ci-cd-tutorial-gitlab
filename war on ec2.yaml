@@ -1,0 +1,18 @@
+#Question: What is the YAML script for GitLab CI deployment of `*.war` on AWS EC2?
+#Answer:
+deploy:
+  stage: deploy
+  script:
+    - apt-get update && apt-get install -y python-pip
+    - pip install awscli
+    - aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID
+    - aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
+    - aws configure set default.region $AWS_REGION
+    - aws ec2 run-instances --image-id ami-xxxxxxxx --instance-type t2.micro --key-name my-key --security-group-ids sg-xxxxxxxx --count 1 --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=MyEC2Instance}]'
+    - sleep 60
+    - aws ec2 describe-instances --filters "Name=tag:Name,Values=MyEC2Instance" --query "Reservations[].Instances[].PublicIpAddress" --output=text > ec2_ip.txt
+    - scp -i path/to/my-key.pem target/*.war ubuntu@$(cat ec2_ip.txt):/home/ubuntu/
+    - ssh -i path/to/my-key.pem ubuntu@$(cat ec2_ip.txt) 'sudo apt-get update && sudo apt-get install -y tomcat8'
+    - ssh -i path/to/my-key.pem ubuntu@$(cat ec2_ip.txt) 'sudo cp /home/ubuntu/*.war /var/lib/tomcat8/webapps/'
+  only:
+    - master
