@@ -1,9 +1,47 @@
-<mxfile host="app.diagrams.net" modified="2023-07-09T05:05:42.010Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/115.0" version="21.5.2" etag="uTH_vX7n_Xfr1cmfiJ0g" type="github">
+<mxfile host="app.diagrams.net" modified="2023-07-09T05:08:39.968Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/115.0" etag="HqipsLzK-Bgzulmu5k1C" version="21.5.2" type="github">
   <diagram name="Page-1" id="OPsWol8kdIIVtcqvJs5b">
-    <mxGraphModel>
+    <mxGraphModel dx="1513" dy="1275" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="5bj7FWnLl1Tp5w9lzWMu-1" value="Jenkins Master" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="60" y="260" width="180" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="5bj7FWnLl1Tp5w9lzWMu-2" value="Jenkins Worker Node 1" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="340" y="110" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="5bj7FWnLl1Tp5w9lzWMu-3" value="Jenkins Worker Node 2" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="340" y="295" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="5bj7FWnLl1Tp5w9lzWMu-4" value="Jenkins Worker Node 3" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="340" y="480" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="5bj7FWnLl1Tp5w9lzWMu-5" value="" style="endArrow=none;html=1;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="5bj7FWnLl1Tp5w9lzWMu-1" target="5bj7FWnLl1Tp5w9lzWMu-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="250" y="210" as="sourcePoint" />
+            <mxPoint x="300" y="160" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="280" y="340" />
+              <mxPoint x="280" y="155" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5bj7FWnLl1Tp5w9lzWMu-6" value="" style="shape=link;html=1;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="5bj7FWnLl1Tp5w9lzWMu-1" target="5bj7FWnLl1Tp5w9lzWMu-4">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="300" y="449" as="sourcePoint" />
+            <mxPoint x="400" y="449" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="280" y="340" />
+              <mxPoint x="280" y="525" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5bj7FWnLl1Tp5w9lzWMu-7" value="" style="shape=link;html=1;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="5bj7FWnLl1Tp5w9lzWMu-1" target="5bj7FWnLl1Tp5w9lzWMu-3">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="250" y="339.5" as="sourcePoint" />
+            <mxPoint x="350" y="339.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
