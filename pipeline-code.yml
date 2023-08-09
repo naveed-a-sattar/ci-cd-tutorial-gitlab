@@ -15,7 +15,7 @@ FeatureBranchCloudWatchEventRule:
           referenceType:
             - branch
           referenceName:
-            - prefix: feature/.
+            - prefix: feature/
       Targets:
         - Arn: !Sub "arn:${AWS::Partition}:codepipeline:${AWS::Region}:${AWS::AccountId}:${Pipeline}"
           RoleArn: !GetAtt CloudWatchEventRole.Arn
