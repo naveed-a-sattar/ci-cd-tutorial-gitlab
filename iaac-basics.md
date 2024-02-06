@@ -1,6 +1,6 @@
 # Unlocking the Power of Infrastructure as Code in DevOps Transformation
 
-## Introduction
+### Introduction
 
 In today's rapidly evolving technology landscape, DevOps practices have emerged as a critical component for organizations to achieve agility, scalability, and efficiency in their software development and delivery processes. One of the key pillars of successful DevOps implementation is Infrastructure as Code (IaC), a practice that enables the management and provisioning of infrastructure resources through machine-readable configuration files.
 
